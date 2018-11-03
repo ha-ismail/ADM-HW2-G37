@@ -4,13 +4,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>77b612e0-0117-4e69-a083-c37cefd22a7d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ADM_HW1.py</StartupFile>
+    <StartupFile>CQ1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>ADM_HW1</Name>
     <RootNamespace>ADM_HW1</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,13 +23,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ADM_HW1.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="RQ2.ipynb" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Support\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CQ1.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
